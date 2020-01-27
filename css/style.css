@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    line-height: 24px;
+    font-size: 15px;
+}
+
+.header {
+    background-image: url(../images/header-bg.svg);
+    min-height: 793px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.header__top {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+}
+
+.menu__list {
+    display: flex;
+}
+
+.menu__list li+li {
+    padding-left: 50px;
+}
+
+.login {
+    margin-right: 44px;
+    color: #ffffff;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.menu__list a {
+    opacity: 0.5;
+    color: #ffffff;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all .5s;
+}
+
+.menu__list a:hover {
+    opacity: 1;
+}
+
+.sign-up {
+    text-transform: uppercase;
+    color: #250F8A;
+    font-weight: 600;
+    background-color: #ffffff;
+    padding: 8px 43px;
+    border-radius: 20px;
+}
+
+.header-slider {
+    padding-top: 111px;
+}
+
+.header-slider__item {}
+
+.header-slider__item-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.headr-slider__item-info {
+    max-width: 506px;
+}
+
+.header-slider__title {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 60px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.header-slider__description {
+    color: #ffffff;
+    font-size: 24px;
+    line-height: 55px;
+    margin-bottom: 60px;
+}
+
+.header-slider__btn {
+    color: #250F8A;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 13px 39px;
+    background-color: #FFCA00;
+    border-radius: 25px;
+}
+
+.header-slider__item-images {
+    margin: 10px 82px 0 0;
+}
+
+.header-dots {
+    list-style: none;
+    position: absolute;
+    right: 0;
+    top: 50%;
+}
+
+.header-dots button {
+    border: none;
+    background-color: #fff;
+    opacity: 0.5;
+    font-size: 0;
+    padding: 0;
+    width: 7px;
+    height: 7px;
+    border-radius: 3.5px;
+    cursor: pointer;
+    outline: none;
+    margin: 10px auto;
+    display: block;
+}
+.header-dots .slick-active button{
+    width: 15px;
+    opacity: 1;
+}
